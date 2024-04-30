@@ -14,11 +14,11 @@ Users Table:
     email
     role (e.g., admin, librarian, patron)
 
-Loans Table:
-    loan_id (Primary Key)
+Borrow Table:
+    borrow_id (Primary Key)
     user_id (Foreign Key referencing Users table)
     book_id (Foreign Key referencing Books table)
-    loan_date
+    Borrow_date
     return_date
     status (e.g., borrowed, returned)
 
