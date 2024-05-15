@@ -6,6 +6,7 @@ Books Table:
     publication_date
     ISBN
     quantity_available
+    description
 
 Users Table:
     user_id (Primary Key)
@@ -51,3 +52,14 @@ Authors Table:
 Genres Table:
     genre_id (Primary Key)
     genre_name
+
+Order Table:
+order_id (Primary Key)
+first_name
+last_name
+address
+pincode
+city
+state
+email
+phone
