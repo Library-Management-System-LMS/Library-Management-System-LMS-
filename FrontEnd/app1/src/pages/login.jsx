@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 // import './LoginUser.css'; // Import your custom CSS (optional)
 
 const LoginUser = () => {
@@ -53,8 +54,8 @@ const LoginUser = () => {
               <label className="form-check-label" htmlFor="rememberMe">Remember Me</label>
             </div>
             <button type="submit" className="btn btn-primary w-100">Login</button>
-            <a href="#" className="d-block mt-3 text-muted">Forgot Password?</a>
-            <p className="text-center mt-4">Don't have an account? <a href="#">Register Here</a></p>
+              <Link to="#">Forgot Password?</Link>
+            <p className="text-center mt-4">Don't have an account? <Link to="/register">Register Here</Link></p>
           </form>
         </div>
       </main>
