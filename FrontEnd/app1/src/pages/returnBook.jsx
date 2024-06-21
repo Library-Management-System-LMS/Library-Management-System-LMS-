@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const ReturnBook = () => {
   const [issueDetails, setIssueDetails] = useState({});
   const [bookId, setBookId] = useState('');
-  const [studentId, setStudentId] = useState('');
+  const [userId, setUserId] = useState('');
 
   useEffect(() => {
     // Fetch issued book details from backend (replace with your API endpoint)
@@ -16,12 +16,12 @@ const ReturnBook = () => {
 
   const handleFindDetails = () => {
     // Handle find details logic
-    console.log('Finding details for Book ID:', bookId, 'Student ID:', studentId);
+    console.log('Finding details for Book ID:', bookId, 'Student ID:', userId);
   };
 
   const handleReturnBook = () => {
     // Handle return book logic
-    console.log('Returning book for Book ID:', bookId, 'Student ID:', studentId);
+    console.log('Returning book for Book ID:', bookId, 'Student ID:', userId);
   };
 
   return (
@@ -31,7 +31,7 @@ const ReturnBook = () => {
           <h1>Issued Book Details</h1>
           <p><strong>Issue Id:</strong> {issueDetails.issueId}</p>
           <p><strong>Book Name:</strong> {issueDetails.bookName}</p>
-          <p><strong>Student Name:</strong> {issueDetails.studentName}</p>
+          <p><strong>User Name:</strong> {issueDetails.usertName}</p>
           <p><strong>Issue Date:</strong> {issueDetails.issueDate}</p>
           <p><strong>Due Date:</strong> {issueDetails.dueDate}</p>
         </div>
@@ -49,13 +49,13 @@ const ReturnBook = () => {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="studentId">Student Id:</label>
+              <label htmlFor="userId">User Id:</label>
               <input
                 type="text"
-                id="studentId"
+                id="userId"
                 className="form-control"
-                value={studentId}
-                onChange={(e) => setStudentId(e.target.value)}
+                value={userId}
+                onChange={(e) => setUserId(e.target.value)}
               />
             </div>
             &nbsp;
