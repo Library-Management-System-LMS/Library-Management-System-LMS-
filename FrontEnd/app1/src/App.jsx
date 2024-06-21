@@ -5,7 +5,6 @@ import LoginUser from './pages/login';
 import RegisterUser from './pages/register';
 import Home from './pages/home';
 import AboutPage from './pages/about';
-import ManageStudents from './pages/manageStudent';
 import ManageBooks from './pages/manageBook';
 import ReturnBook from './pages/returnBook';
 import Test from './pages/test';
@@ -21,7 +20,7 @@ function App() {
         <Route path='/home' element={<Home />} />
         <Route path='/return' element={<ReturnBook/>}/>
         <Route path='/about' element={<AboutPage />} />
-        <Route path='/managestudent' element={<ManageStudents />} />
+        <Route path='/manageuser' element={<ManageUsers />} />
         <Route path='/managebook' element={<ManageBooks />} />
         <Route path='/test' element={<Test />} />
         <Route path='/issue' element={<IssuedBook />} />

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 // import { Container, Row, Col, Form, Button, Table } from 'react-bootstrap';
 
-const ManageStudents = () => {
-  const [studentId, setStudentId] = useState('');
-  const [studentName, setStudentName] = useState('');
+const ManageUsers = () => {
+  const [userId, setuserId] = useState('');
+  const [userName, setuserName] = useState('');
   const [courseName, setCourseName] = useState('BSC');
   const [branchName, setBranchName] = useState('CS');
 
@@ -13,12 +13,12 @@ const ManageStudents = () => {
       <div className="sidebar bg-primary text-white p-4">
         <a href="#" className="btn btn-danger mb-3">Back</a>
         <div className="mb-3">
-          <label className="form-label">Enter Student ID</label>
-          <input type="text" className="form-control" placeholder="Enter Student ID" />
+          <label className="form-label">Enter User ID</label>
+          <input type="text" className="form-control" placeholder="Enter User ID" />
         </div>
         <div className="mb-3">
-          <label className="form-label">Enter Student Name</label>
-          <input type="text" className="form-control" placeholder="Enter Student Name" />
+          <label className="form-label">Enter User Name</label>
+          <input type="text" className="form-control" placeholder="Enter User Name" />
         </div>
         <div className="mb-3">
           <label className="form-label">Enter Course Name</label>
@@ -44,12 +44,12 @@ const ManageStudents = () => {
       </div>
       <div className="content p-4 w-100">
         <div className="header d-flex justify-content-between align-items-center mb-4">
-          <h1>Manage Students</h1>
+          <h1>Manage Users</h1>
         </div>
         <table className="table table-bordered">
           <thead>
             <tr>
-              <th>Student Id</th>
+              <th>User Id</th>
               <th>Name</th>
               <th>Course</th>
               <th>Branch</th>
@@ -100,4 +100,4 @@ const ManageStudents = () => {
   );
 };
 
-export default ManageStudents;
+export default ManageUsers;
