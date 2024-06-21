@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { Route, Routes } from 'react-router-dom'
+import axios from 'axios';
 import LoginUser from './pages/login';  
 import RegisterUser from './pages/register';
 import Home from './pages/home';
@@ -9,6 +10,7 @@ import ManageBooks from './pages/manageBook';
 import ReturnBook from './pages/returnBook';
 import Test from './pages/test';
 import IssuedBook from './pages/issueBook';
+import DefaulterList from './pages/defaulterList';
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
         <Route path='/managebook' element={<ManageBooks />} />
         <Route path='/test' element={<Test />} />
         <Route path='/issue' element={<IssuedBook />} />
+        <Route path='/defaulter' element={<DefaulterList/>}/>
       </Routes>
 
     </div>

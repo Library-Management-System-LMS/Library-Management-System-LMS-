@@ -1,4 +1,4 @@
-
+// import <LMS_logo className="jpg"></LMS_logo>
 function Test() {
 
   return (
@@ -6,17 +6,30 @@ function Test() {
       
   <title>Test</title>
 
-<body>
-  <div class="text-container">
-    <h1>This is the Text Side</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi odio vel elit malesuada, at bibendum arcu pulvinar. Donec sed odio dui. Fusce semper quam nec urna pharetra, eget posuere lorem pretium. Sed eu libero lectus. Vivamus lacinia odio vitae vestibulum consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero. Mauris eget leo risus.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi odio vel elit malesuada, at bibendum arcu pulvinar. Donec sed odio dui. Fusce semper quam nec urna pharetra, eget posuere lorem pretium. Sed eu libero lectus. Vivamus lacinia odio vitae vestibulum consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nulla vitae elit libero. Mauris eget leo risus.</p>
-  
-  </div>
-  <div class="image-container"></div>
-</body>
-
-      
+  <div class="container">
+        <h1>Defaulter List</h1>
+        <div class="image">
+        </div>
+        <table>
+            <tr>
+                <th>Issue Id</th>
+                <th>Book Name</th>
+                <th>Student Name</th>
+                <th>Issue Date</th>
+                <th>Due Date</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Spring MVC: A tutorial</td>
+                <td>Rahul</td>
+                <td>2021-04-25</td>
+                <td>2021-04-26</td>
+                <td>Pending</td>
+            </tr>
+        </table>
+    </div>
+ 
     </div>
   );
 }
