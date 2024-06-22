@@ -1,50 +1,113 @@
+import React from 'react';
 
-
-
-function Home(){
-
-    return (
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Library Mangement System</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></hr></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
-                </ul>
-
-
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                    {/* Add space */}
-                    <button type="button" class="btn btn-outline-primary">Login</button>
-                </form>
-                </div>
-            </div>
-            </nav>
-    )
+const Home = () => {
+  return (
+    <div class="container">
+    <header class="text-center py-4 bg-light mb-4">
+      {/* <h1>Library Management System</h1> */}
+    </header>
+  
+    <div class="row text-center mb-4">
+      <div class="col-md-3 counter bg-white p-4 shadow-sm rounded">
+        <h3>No. of Books</h3>
+        <p>4</p>
+      </div>
+      <div class="col-md-3 counter bg-white p-4 shadow-sm rounded">
+        <h3>No. of Users</h3>
+        <p>6</p>
+      </div>
+      <div class="col-md-3 counter bg-white p-4 shadow-sm rounded">
+        <h3>Issued Books</h3>
+        <p>2</p>
+      </div>
+      <div class="col-md-3 counter bg-white p-4 shadow-sm rounded">
+        <h3>Defaulter List</h3>
+        <p>1</p>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h3>User Details</h3>
+        <table class="table table-striped table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>User ID</th>
+              <th>Name</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Sunil</td>
+              <td>sunil@example.com</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Mangesh</td>
+              <td>mangesh@example.com</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Deepak</td>
+              <td>deepak@example.com</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Rahul</td>
+              <td>rahul@example.com</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Praful</td>
+              <td>praful@example.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-6 mb-4">
+        <h3>Book Details</h3>
+        <table class="table table-striped table-bordered table-hover">
+          <thead>
+            <tr>
+              <th>Book ID</th>
+              <th>Name</th>
+              <th>Author</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Introducing Java 8</td>
+              <td>Raoul-Gabriel Urma</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Java: The Legend</td>
+              <td>Benjamin Evans</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Spring MVC: A tutorial</td>
+              <td>Paul Deck</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Core Java Volume I</td>
+              <td>Cay S. Horstmann</td>
+              <td>3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  );
 }
 
-export default Home
+export default Home;

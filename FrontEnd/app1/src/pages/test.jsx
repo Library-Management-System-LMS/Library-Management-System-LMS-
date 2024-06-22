@@ -1,105 +1,84 @@
 // import <LMS_logo className="jpg"></LMS_logo>
+import { Link } from "react-router-dom";
+import MyLogo from "./logo";
+// import logo from "../images/LMS_logo.jpg"
+
 function Test() {
 
   return (
     <div className="container">
       
-  <title>Test</title>
 
-  <div class="container">
-  <div class="header">
-        Library Management System
-    </div>
+      <header className="d-flex flex-wrap w-100 justify-content-between align-items-center py-3 mb-4 border-bottom">
+  <div className="d-flex align-items-center col-md-4">
+    <MyLogo />
+    <Link className='nav-link' to="/home">Library Management System</Link>
+  </div>
 
-    <div class="counters">
-        <div class="counter">
-            <h3>No. of Books</h3>
-            <p>4</p>
-        </div>
-        <div class="counter">
-            <h3>No. of Users</h3>
-            <p>6</p>
-        </div>
-        <div class="counter">
-            <h3>Issued Books</h3>
-            <p>2</p>
-        </div>
-        <div class="counter">
-            <h3>Defaulter List</h3>
-            <p>1</p>
-        </div>
-    </div>
+  <ul className="nav col-md-6 justify-content-end list-unstyled">
+    {/* Current page - Home (highlighted) */}
+    <li className="nav-item">
+      <Link className="nav-link active" aria-current="page" to="/home">
+        Home
+      </Link>
+    </li>
 
-    <div class="container">
-        <h3>User Details</h3>
-        <table>
-            <tr>
-                <th>User ID</th>
-                <th>Name</th>
-                <th>Email</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Sunil</td>
-                <td>sunil@example.com</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Mangesh</td>
-                <td>mangesh@example.com</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Deepak</td>
-                <td>deepak@example.com</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Rahul</td>
-                <td>rahul@example.com</td>
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>Praful</td>
-                <td>praful@example.com</td>
-            </tr>
-        </table>
-        <h3>Book Details</h3>
-        <table>
-            <tr>
-                <th>Book ID</th>
-                <th>Name</th>
-                <th>Author</th>
-                <th>Quantity</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Introducing Java 8</td>
-                <td>Raoul-Gabriel Urma</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Java: The Legend</td>
-                <td>Benjamin Evans</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Spring MVC: A tutorial</td>
-                <td>Paul Deck</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Core Java Volume I</td>
-                <td>Cay S. Horstmann</td>
-                <td>3</td>
-            </tr>
-        </table>
-    </div>
-    </div>
-    </div>
+    {/* Dropdown Menu */}
+    <li className="nav-item dropdown">
+      <a
+        className="nav-link dropdown-toggle"
+        href="#"
+        id="navbarDropdown"
+        role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        More
+      </a>
+      <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><Link className="dropdown-item" to="/return">Return Book</Link></li>
+        <li><Link className="dropdown-item" to="/manageuser">Manage Users</Link></li>
+        <li><Link className="dropdown-item" to="/managebook">Manage Books</Link></li>
+        <li><Link className="dropdown-item" to="/viewbook">View Records</Link></li>
+        <li><Link className="dropdown-item" to="/viewbooks">View Books</Link></li>
+        <li><Link className="dropdown-item" to="/defaulter">Defaulters List</Link></li>
+        <li><Link className="dropdown-item" to="/about">About</Link></li>
+      </ul>
+    </li>
+
+    {/* Login and Signup at right corner */}
+    <li className="nav-item ms-3">
+      <Link className="nav-link" to="/login">Login</Link>
+    </li>
+    <li className="nav-item">
+      <Link className="nav-link" to="/register">Sign Up</Link>
+    </li>
+  </ul>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>  
   );
 }
 

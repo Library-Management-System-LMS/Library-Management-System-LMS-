@@ -11,9 +11,16 @@ function AboutPage() {
 
         <ul className="nav col-md-6 justify-content-end list-unstyled">
           <li className="nav-item"><Link  className="nav-link" to="/home">Home</Link></li>
+          <li className="nav-item"><Link  className="nav-link" to="/return">Return Book</Link></li>
+          <li className="nav-item"><Link  className="nav-link" to="/manageuser">Manage Users</Link></li>
+          <li className="nav-item"><Link  className="nav-link" to="/managebook">Manage Books</Link></li>
+          <li className="nav-item"><Link  className="nav-link" to="/viewbook">View Records</Link></li>
+          <li className="nav-item"><Link  className="nav-link" to="/home">View Books</Link></li>
+          <li className="nav-item"><Link  className="nav-link" to="/defaulter">Defaulters List</Link></li>
+          <li className="nav-item"><Link  className="nav-link" to="/about">About</Link></li>
+
           <li className="nav-item"><Link  className="nav-link" to="/login">Login</Link></li>
-          <li className="nav-item"><a href="#" className="nav-link">Services</a></li>
-          <li className="nav-item"><a href="#" className="nav-link">Contact</a></li>
+          <li className="nav-item"><Link  className="nav-link" to="/register">Sign Up</Link></li>
         </ul>
       </header>
 

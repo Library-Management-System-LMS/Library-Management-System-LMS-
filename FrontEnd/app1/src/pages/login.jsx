@@ -16,11 +16,6 @@ const LoginUser = () => {
 
   return (
     <div className="container-fluid d-flex flex-column h-100">
-      <header className="navbar navbar-expand-sm navbar-light bg-light fixed-top">
-        <div className="container">
-          <a className="navbar-brand" href="#">Library Mangement Sytem</a>
-        </div>
-      </header>
       <main className="d-flex justify-content-center align-items-center flex-grow-1 pt-5 mt-5">
         <div className="col-xs-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 card p-4">
           <h1 className="text-center mb-4">Login</h1>
