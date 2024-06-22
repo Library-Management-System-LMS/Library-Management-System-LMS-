@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 
-const IssuedBook = () => {
+const ViewRecords = () => {
   return (
     <div>
       <header className="d-flex flex-wrap justify-content-between align-items-center py-3 mb-4 border-bottom">
@@ -18,7 +18,7 @@ const IssuedBook = () => {
         </ul>
       </header>
       <div className="header">
-        <h1>Issued Book Details</h1>
+        <h1>View Records</h1>
       </div>
       <div className="container mt-4 p-4 bg-white shadow">
         <div className="row mb-4">
@@ -37,7 +37,7 @@ const IssuedBook = () => {
             <tr>
               <th>Issue Id</th>
               <th>Book Name</th>
-              <th>Student Name</th>
+              <th>User Name</th>
               <th>Issue Date</th>
               <th>Due Date</th>
               <th>Status</th>
@@ -75,5 +75,5 @@ const IssuedBook = () => {
   );
 };
 
-export default IssuedBook;
+export default ViewRecords;
 

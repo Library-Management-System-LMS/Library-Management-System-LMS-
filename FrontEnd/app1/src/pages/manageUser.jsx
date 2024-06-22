@@ -11,7 +11,7 @@ const ManageUsers = () => {
     <div>
         <div className="d-flex">
       <div className="sidebar bg-primary text-white p-4">
-        <a href="#" className="btn btn-danger mb-3">Back</a>
+        {/* <a href="#" className="btn btn-danger mb-3">Back</a> */}
         <div className="mb-3">
           <label className="form-label">Enter User ID</label>
           <input type="text" className="form-control" placeholder="Enter User ID" />
@@ -20,22 +20,22 @@ const ManageUsers = () => {
           <label className="form-label">Enter User Name</label>
           <input type="text" className="form-control" placeholder="Enter User Name" />
         </div>
-        <div className="mb-3">
+        {/* <div className="mb-3">
           <label className="form-label">Enter Course Name</label>
           <select className="form-select">
             <option>BSC</option>
             <option>MSC</option>
             <option>B.E</option>
           </select>
-        </div>
-        <div className="mb-3">
+        </div> */}
+        {/* <div className="mb-3">
           <label className="form-label">Enter Branch Name</label>
           <select className="form-select">
             <option>CS</option>
             <option>IT</option>
             <option>PLAIN</option>
           </select>
-        </div>
+        </div> */}
         <div className="d-grid gap-2">
           <button className="btn btn-danger">ADD</button>
           <button className="btn btn-danger">UPDATE</button>
@@ -51,46 +51,46 @@ const ManageUsers = () => {
             <tr>
               <th>User Id</th>
               <th>Name</th>
-              <th>Course</th>
-              <th>Branch</th>
+              <th>Email</th>
+              {/* <th>Branch</th> */}
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>1</td>
               <td>Sunil</td>
-              <td>BSC</td>
-              <td>CS</td>
+              <td>something@gmail.com</td>
+              {/* <td>CS</td> */}
             </tr>
             <tr>
               <td>2</td>
               <td>mangesh</td>
-              <td>MSC</td>
-              <td>CS</td>
+              <td>mangesh@gmail.com</td>
+              {/* <td>CS</td> */}
             </tr>
             <tr>
               <td>3</td>
               <td>Deepak</td>
-              <td>BSC</td>
-              <td>IT</td>
+              <td>deepak@gamil.com</td>
+              {/* <td>IT</td> */}
             </tr>
             <tr>
               <td>4</td>
               <td>Rahul</td>
-              <td>BSC</td>
-              <td>PLAIN</td>
+              <td>rahul@gmail.com</td>
+              {/* <td>PLAIN</td> */}
             </tr>
             <tr>
               <td>5</td>
               <td>Praful</td>
-              <td>B.E</td>
-              <td>IT</td>
+              <td>praful@gmail.com</td>
+              {/* <td>IT</td> */}
             </tr>
             <tr>
               <td>6</td>
               <td>Shivam</td>
-              <td>B.E</td>
-              <td>CS</td>
+              <td>shivam@gmail.com</td>
+              {/* <td>CS</td> */}
             </tr>
           </tbody>
         </table>

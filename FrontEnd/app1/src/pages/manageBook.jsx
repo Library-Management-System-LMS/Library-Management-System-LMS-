@@ -11,7 +11,7 @@ const ManageBooks = () => {
    <div>
      <div className="d-flex">
       <div className="sidebar bg-primary text-white p-4">
-        <a href="#" className="btn btn-danger mb-3">Back</a>
+        {/* <a href="#" className="btn btn-danger mb-3">Back</a> */}
         <div className="mb-3">
           <label className="form-label">Enter Book ID</label>
           <input type="text" className="form-control" placeholder="Enter Book ID" />

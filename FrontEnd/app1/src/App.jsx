@@ -9,8 +9,9 @@ import AboutPage from './pages/about';
 import ManageBooks from './pages/manageBook';
 import ReturnBook from './pages/returnBook';
 import Test from './pages/test';
-import IssuedBook from './pages/issueBook';
+import ViewRecords from './pages/ViewRecords';
 import DefaulterList from './pages/defaulterList';
+import ManageUsers from './pages/manageUser';
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
         <Route path='/manageuser' element={<ManageUsers />} />
         <Route path='/managebook' element={<ManageBooks />} />
         <Route path='/test' element={<Test />} />
-        <Route path='/issue' element={<IssuedBook />} />
+        <Route path='/viewrecords' element={<ViewRecords />} />
         <Route path='/defaulter' element={<DefaulterList/>}/>
       </Routes>
 
