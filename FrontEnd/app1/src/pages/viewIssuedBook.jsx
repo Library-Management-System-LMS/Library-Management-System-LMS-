@@ -1,6 +1,8 @@
 import React from 'react';
 
 function ViewIssuedBook() {
+    //to set title of the page
+    document.title = "VIEW ISSUED BOOK";
   return (
     <div className="container d-flex flex-row justify-content-between h-100">
       <div className="issued-book-details col-md-6 bg-danger text-white d-flex flex-column justify-content-center align-items-start px-5 py-3">

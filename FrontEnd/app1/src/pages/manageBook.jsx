@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 //import { Container, Row, Col, Form, Button, Table } from 'react-bootstrap';
 
 const ManageBooks = () => {
+    //to set title of the page
+    document.title = "MANAGE BOOKS";
+
   const [bookId, setBookId] = useState('');
   const [bookName, setBookName] = useState('');
   const [authorName, setAuthorName] = useState('');

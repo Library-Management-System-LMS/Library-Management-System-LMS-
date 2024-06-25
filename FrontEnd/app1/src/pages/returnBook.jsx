@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const ReturnBook = () => {
+  //to set title of the page
+  document.title = "RETURN BOOK";
   const [issueDetails, setIssueDetails] = useState({});
   const [bookId, setBookId] = useState('');
   const [userId, setUserId] = useState('');

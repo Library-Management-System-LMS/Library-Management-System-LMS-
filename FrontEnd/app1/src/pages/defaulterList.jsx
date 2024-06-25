@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const DefaulterList = () => {
+  //to set title of the page
+  document.title = "DEFAULTER LIST";
+
   const [defaulters, setDefaulters] = useState([]);
 
   useEffect(() => {
@@ -17,9 +20,9 @@ const DefaulterList = () => {
 
   return (
     <div className="container my-5">
-      <h1 className="text-center mb-4">Defaulter List</h1>
+      <h2 className="text-center mb-4">Defaulter List</h2>
       <div className="d-flex justify-content-center">
-        <img src="Screenshot (2).png" alt="Defaulter List" className="img-fluid mb-4" style={{ maxWidth: '100%' }} />
+        {/* <img src="" alt="Defaulter List" className="img-fluid mb-4" style={{ maxWidth: '100%' }} /> */}
       </div>
       <div className="table-responsive">
         <table className="table table-bordered text-center">

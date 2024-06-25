@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 const RegisterUser = () => {
+    //to set title of the page
+    document.title = "SIGN UP";
+
   const [formData, setFormData] = useState({
     username: '',
     password: '',
@@ -17,7 +20,7 @@ const RegisterUser = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://your-backend-url/registration_process', formData);
+      const response = await axios.post('', formData);
       console.log('Registration successful:', response.data);
       // Optionally: show a success message or redirect to another page
     } catch (error) {
@@ -46,7 +49,7 @@ const RegisterUser = () => {
             </p>
           </div>
           <div className="col-md-6 form-container rounded shadow-sm p-4">
-            <h2 className="text-center mb-5">REGISTER FORM</h2>
+            <h2 className="text-center mb-5">SIGN UP</h2>
 
             <form onSubmit={handleSubmit}>
               <div className="form-group mb-3">

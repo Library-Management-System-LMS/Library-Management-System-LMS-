@@ -1,13 +1,15 @@
 import React from 'react';
+import Layout from '../components/layout';
 
 const Home = () => {
+  //to set title of the page
+  document.title = "HOME";
+
+
   return (
     <div class="container">
-    <header class="text-center py-4 bg-light mb-4">
-      {/* <h1>Library Management System</h1> */}
-    </header>
-  
-    <div class="row text-center mb-4">
+      
+      <div class="row text-center mb-4">
       <div class="col-md-3 counter bg-white p-4 shadow-sm rounded">
         <h3>No. of Books</h3>
         <p>4</p>
@@ -106,7 +108,9 @@ const Home = () => {
         </table>
       </div>
     </div>
-  </div>
+
+  
+    </div>
   );
 }
 

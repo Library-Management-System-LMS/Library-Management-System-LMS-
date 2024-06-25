@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 // import { Container, Row, Col, Form, Button, Table } from 'react-bootstrap';
 
 const ManageUsers = () => {
+    //to set title of the page
+    document.title = "MANAGE USERS";
   const [userId, setuserId] = useState('');
   const [userName, setuserName] = useState('');
   const [courseName, setCourseName] = useState('BSC');

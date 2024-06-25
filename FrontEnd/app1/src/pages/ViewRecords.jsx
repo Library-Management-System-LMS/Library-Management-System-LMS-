@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 
 
 const ViewRecords = () => {
+    //to set title of the page
+    document.title = "VIEW RECORDS";
+
   return (
     <div>
       <header className="d-flex flex-wrap justify-content-between align-items-center py-3 mb-4 border-bottom">

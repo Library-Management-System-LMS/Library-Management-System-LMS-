@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 // import './LoginUser.css'; // Import your custom CSS (optional)
 
 const LoginUser = () => {
+    //to set title of the page
+    document.title = "LOG IN";
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
