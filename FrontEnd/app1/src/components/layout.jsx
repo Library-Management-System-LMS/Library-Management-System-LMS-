@@ -1,4 +1,4 @@
-import { MyNavbar, MyNavbar1, MyFooter } from "../pages/pageService";
+import { MyNavbar, MyNavbar1, MyFooter, MyNavbar2 } from "../pages/pageService";
 import { useLocation } from "react-router-dom";
 
 //use location which identifies url pathname
@@ -12,7 +12,7 @@ const Layout = () => {
               case '/register':
                 return <MyNavbar1 />;
               case '/login':
-                return <MyNavbar1 />;
+                return <MyNavbar2 />;
               default:
                 return <MyNavbar />;
             }

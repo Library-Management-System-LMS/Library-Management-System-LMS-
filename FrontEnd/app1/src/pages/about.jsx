@@ -4,25 +4,6 @@ import { Link } from 'react-router-dom';
 function AboutPage() {
   return (
     <div className="container">
-      <header className="d-flex flex-wrap justify-content-between align-items-center py-3 mb-4 border-bottom">
-        <div className="d-flex align-items-center col-md-3">
-          <Link className='nav-link' to="/home">Library Managment System</Link>
-        </div>
-
-        <ul className="nav col-md-6 justify-content-end list-unstyled">
-          <li className="nav-item"><Link  className="nav-link" to="/home">Home</Link></li>
-          <li className="nav-item"><Link  className="nav-link" to="/return">Return Book</Link></li>
-          <li className="nav-item"><Link  className="nav-link" to="/manageuser">Manage Users</Link></li>
-          <li className="nav-item"><Link  className="nav-link" to="/managebook">Manage Books</Link></li>
-          <li className="nav-item"><Link  className="nav-link" to="/viewbook">View Records</Link></li>
-          <li className="nav-item"><Link  className="nav-link" to="/home">View Books</Link></li>
-          <li className="nav-item"><Link  className="nav-link" to="/defaulter">Defaulters List</Link></li>
-          <li className="nav-item"><Link  className="nav-link" to="/about">About</Link></li>
-
-          <li className="nav-item"><Link  className="nav-link" to="/login">Login</Link></li>
-          <li className="nav-item"><Link  className="nav-link" to="/register">Sign Up</Link></li>
-        </ul>
-      </header>
 
       <body>
         <h1 className="display-4 mt-4">About Us</h1>
@@ -41,19 +22,6 @@ function AboutPage() {
             <li>Manage user accounts and their roles within the system.</li>
           </ul>
       </body>
-
-      <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p className="col-md-4 mb-0 text-muted">2024 Library Managment System</p>
-
-        
-
-        {/* <a href="#" className="col-md-3 d-flex align-items-center justify-content-md-end mb-md-0 text-muted link-dark text-decoration-none">
-          <svg className="bi me-2" width="24" height="24"><use href="#bootstrap-facebook"/></svg>
-        </a>
-        <a href="#" className="col-md-3 d-flex align-items-center justify-content-md-end mb-md-0 text-muted link-dark text-decoration-none">
-          <svg className="bi me-2" width="24" height="24"><use href="#bootstrap-twitter"/></svg>
-        </a> */}
-      </footer>
     </div>
   );
 }

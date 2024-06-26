@@ -1,13 +1,30 @@
 import React from 'react';
 import logo from '../images/LMS_logo.jpg';
-import '../App.css';
+// import '../App.css';
 import { Link, useLocation } from 'react-router-dom'; 
 
 function MyLogo() {
   return (
-    <div className="logo-container">
-      <img src={logo} alt="Your Company Logo" className="logo" />
+    // <div className="logo-container">
+    //   <img src={logo} alt="Your Company Logo" className="logo" />
+    // </div>
+      // <!-- Image and text -->
+    <div classname="logo-container">
+      <nav class="navbar navbar-light bg-light">
+        {/* <a class="navbar-brand">
+          <img src={logo} width="30" height="30" class="d-inline-block align-top" alt="Logo"/>
+        </a> */}
+        <img
+        src={logo}
+        class="me-2"
+        height="40"
+        alt="Logo"
+        loading="lazy"
+      />
+      </nav>
     </div>
+
+    
   );
 }
 
@@ -33,7 +50,7 @@ function MyLogo() {
 
 const MyNavbar = () =>{
   return (
-    <header className="d-flex flex-wrap w-100 justify-content-between align-items-center py-3 mb-4 border-bottom">
+    <header className="d-flex flex-wrap w-100 justify-content-between align-itms-center mb-4 border-bottom">
   <div className="d-flex align-items-center col-md-4">
     <MyLogo />
     <Link className='nav-link' to="/home">Library Management System</Link>
@@ -42,8 +59,10 @@ const MyNavbar = () =>{
   <ul className="nav col-md-6 justify-content-end list-unstyled">
     {/* Current page - Home (highlighted) */}
     <li className="nav-item">
-      <Link className="nav-link active" aria-current="page" to="/home">
-        Home
+      <Link className="nav-link active" to="/home">
+      <button data-mdb-ripple-init type="button" class="btn">
+          Home
+        </button>
       </Link>
     </li>
 
@@ -57,7 +76,9 @@ const MyNavbar = () =>{
         data-bs-toggle="dropdown"
         aria-expanded="false"
       >
-        More
+        <button data-mdb-ripple-init type="button" class="btn">
+          More
+        </button>
       </a>
       <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
         <li><Link className="dropdown-item" to="/return">Return Book</Link></li>
@@ -71,12 +92,22 @@ const MyNavbar = () =>{
     </li>
 
     {/* Login and Signup at right corner */}
-    <li className="nav-item ms-3">
-      <Link className="nav-link" to="/login">Login</Link>
+    <li className="nav-item">
+      <Link className="nav-link" to="/login">
+      <button data-mdb-ripple-init type="button" class="btn">
+          Login
+        </button>
+      </Link>
     </li>
     <li className="nav-item">
-      <Link className="nav-link" to="/register">Sign Up</Link>
+      <Link className="nav-link" to="/register">
+      <button data-mdb-ripple-init type="button" class="btn btn-primary me-2">
+          Sign up
+        </button>
+      </Link>
     </li>
+
+
   </ul>
 </header>
 
@@ -85,7 +116,7 @@ const MyNavbar = () =>{
 
 const MyNavbar1 = () => {
   return (
-    <header className="d-flex flex-wrap w-100 justify-content-between align-items-center py-3 mb-4 border-bottom">
+<header className="d-flex flex-wrap w-100 justify-content-between align-itms-center mb-4 border-bottom">
   <div className="d-flex align-items-center col-md-4">
     <MyLogo />
     <Link className='nav-link' to="/home">Library Management System</Link>
@@ -94,40 +125,64 @@ const MyNavbar1 = () => {
   <ul className="nav col-md-6 justify-content-end list-unstyled">
     {/* Current page - Home (highlighted) */}
     <li className="nav-item">
-      <Link className="nav-link active" aria-current="page" to="/home">
-        Home
+      <Link className="nav-link active" to="/home">
+      <button data-mdb-ripple-init type="button" class="btn">
+          Home
+        </button>
       </Link>
     </li>
-
-    {/* Dropdown Menu */}
-    {/* <li className="nav-item dropdown">
-      <a
-        className="nav-link dropdown-toggle"
-        href="#"
-        id="navbarDropdown"
-        role="button"
-        data-bs-toggle="dropdown"
-        aria-expanded="false"
-      >
-        More
-      </a>
-      <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-        <li><Link className="dropdown-item" to="/return">Return Book</Link></li>
-        <li><Link className="dropdown-item" to="/manageuser">Manage Users</Link></li>
-        <li><Link className="dropdown-item" to="/managebook">Manage Books</Link></li>
-        <li><Link className="dropdown-item" to="/viewbook">View Records</Link></li>
-        <li><Link className="dropdown-item" to="/defaulter">Defaulters List</Link></li>
-        <li><Link className="dropdown-item" to="/about">About</Link></li>
-      </ul>
-    </li>
- */}
-    {/* Login and Signup at right corner */}
-    {/* <li className="nav-item ms-3">
-      <Link className="nav-link" to="/login">Login</Link>
+    <li className="nav-item">
+      <Link className="nav-link active" to="/about">
+      <button data-mdb-ripple-init type="button" class="btn">
+          About
+        </button>
+      </Link>
     </li>
     <li className="nav-item">
-      <Link className="nav-link" to="/register">Sign Up</Link>
-    </li> */}
+      <Link className="nav-link" to="/login">
+      <button data-mdb-ripple-init type="button" class="btn btn-primary me-2">
+          Login
+        </button>
+      </Link>
+    </li>
+  </ul>
+</header>
+
+  );
+}
+
+
+const MyNavbar2 = () => {
+  return (
+<header className="d-flex flex-wrap w-100 justify-content-between align-itms-center mb-4 border-bottom">
+  <div className="d-flex align-items-center col-md-4">
+    <MyLogo />
+    <Link className='nav-link' to="/home">Library Management System</Link>
+  </div>
+
+  <ul className="nav col-md-6 justify-content-end list-unstyled">
+    {/* Current page - Home (highlighted) */}
+    <li className="nav-item">
+      <Link className="nav-link active" to="/home">
+      <button data-mdb-ripple-init type="button" class="btn">
+          Home
+        </button>
+      </Link>
+    </li>
+    <li className="nav-item">
+      <Link className="nav-link active" to="/about">
+      <button data-mdb-ripple-init type="button" class="btn">
+          About
+        </button>
+      </Link>
+    </li>
+    <li className="nav-item">
+      <Link className="nav-link" to="/register">
+      <button data-mdb-ripple-init type="button" class="btn btn-primary me-2">
+          Sign Up
+        </button>
+      </Link>
+    </li>
   </ul>
 </header>
 
@@ -150,4 +205,4 @@ function MyFooter(){
   );
 }
 
-export { MyLogo, MyNavbar, MyNavbar1, MyFooter};
+export { MyLogo, MyNavbar, MyNavbar1, MyNavbar2, MyFooter};
