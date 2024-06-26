@@ -2,7 +2,7 @@
 
 .register-page {
   background: linear-gradient(to right, #b9a0d0, #8bcaba); /* Gradient from purple to green */
-  color: #ffffff; /* White text color */
+  color: #180404; /* White text color */
   min-height: 100vh; /* Ensure the background covers the full viewport height */
   display: flex;
   justify-content: center;
@@ -17,7 +17,7 @@
 .btn-primary:hover {
   background-color: #952828; /* Lighter shade on hover */
   border-color: #650505;
-  color: #8a2be2; /* Purple text color on hover */
+  color: #06010a; /* Purple text color on hover */
 }
 
 .terms-link {
