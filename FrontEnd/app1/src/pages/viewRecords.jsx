@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+// import { useState, useEffect } from 'react';
+// import { Link } from 'react-router-dom';
 
 
 const ViewRecords = () => {
@@ -8,18 +8,6 @@ const ViewRecords = () => {
 
   return (
     <div>
-      <header className="d-flex flex-wrap justify-content-between align-items-center py-3 mb-4 border-bottom">
-        <div className="d-flex align-items-center col-md-3">
-          <Link className='nav-link' to="/home">Library Management System</Link>
-        </div>
-
-        <ul className="nav col-md-6 justify-content-end list-unstyled">
-          <li className="nav-item"><Link className="nav-link" to="/home">Home</Link></li>
-          <li className="nav-item"><Link className="nav-link" to="/login">Login</Link></li>
-          <li className="nav-item"><a href="#" className="nav-link">Services</a></li>
-          <li className="nav-item"><a href="#" className="nav-link">Contact</a></li>
-        </ul>
-      </header>
       <div className="header">
         <h1>View Records</h1>
       </div>
