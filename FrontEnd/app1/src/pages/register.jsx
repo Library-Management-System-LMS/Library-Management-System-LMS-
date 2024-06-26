@@ -121,7 +121,13 @@ const RegisterUser = () => {
                             </div>
                         </form>
                     </div>
-                    <div className="text-center mt-4"> {/* Added top margin */}
+                    <div>
+    
+                    </div>
+                 
+                </div>
+                <div className='row justify-content-center-left pt-5'>
+                <div className="text-center mt-4"> {/* Added top margin */}
                         <p className="text-muted">
                             With a library card, you can borrow books, audiobooks, and ebooks. You can also access a variety of online resources, including research databases and streaming services.
                         </p>
@@ -129,7 +135,9 @@ const RegisterUser = () => {
                             Signing up is free and easy! Just fill out the form above to get started.
                         </p>
                     </div>
+
                 </div>
+                
             </div>
         </div>
     );
