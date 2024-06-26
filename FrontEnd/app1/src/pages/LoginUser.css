@@ -1,0 +1,33 @@
+/* LoginUser.css */
+
+.login-page {
+  background-color: #b9a0d0; /* Purple background color (hex: #8a2be2) */
+  color: #ffffff; /* White text color */
+}
+
+.card {
+  background-color: #a0e8d6 ;/* White background for the card */
+  box-shadow: 0 4px 8px rgba(226, 216, 216, 0.1);
+}
+
+
+
+.btn-primary:hover {
+  background-color: #952828; /* Lighter shade on hover */
+  border-color: #650505;
+  color: #8a2be2; /* Purple text color on hover */
+}
+
+.forgot-password-link {
+  margin-top: 10px;
+  display: block;
+  text-align: right;
+  font-size: 14px;
+  color: #593333; /* White link color */
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* You can add more custom styles as needed */
