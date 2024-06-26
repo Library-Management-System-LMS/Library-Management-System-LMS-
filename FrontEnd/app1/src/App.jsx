@@ -1,7 +1,7 @@
 // import logo from './logo.svg';
 // import './App.css';
 import { Route, Routes } from 'react-router-dom'
-import {Navbar, MyFooter} from './pages/pageService';
+import {Navbar, MyFooter} from './components/pageService';
 // import axios from 'axios';
 import LoginUser from './pages/login';  
 import RegisterUser from './pages/register';
