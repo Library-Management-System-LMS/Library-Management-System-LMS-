@@ -45,84 +45,84 @@ const RegisterUser = () => {
                         <div className="card form-container rounded shadow-sm p-3 mb-5"> {/* Increased bottom margin */}
                             <h2 className="text-center mb-3">SIGN UP</h2>
 
-                            <form onSubmit={handleSubmit}>
-                                <div className="form-group mb-2">
-                                    <label htmlFor="firstName">First Name</label>
-                                    <input
-                                        type="text"
-                                        id="firstName"
-                                        name="firstName"
-                                        className="form-control"
-                                        value={formData.firstName}
-                                        onChange={handleInputChange}
-                                        required
-                                    />
-                                </div>
-                                <div className="form-group mb-2">
-                                    <label htmlFor="lastName">Last Name</label>
-                                    <input
-                                        type="text"
-                                        id="lastName"
-                                        name="lastName"
-                                        className="form-control"
-                                        value={formData.lastName}
-                                        onChange={handleInputChange}
-                                        required
-                                    />
-                                </div>
-                                <div className="form-group mb-2">
-                                    <label htmlFor="email">Your Email</label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        className="form-control"
-                                        value={formData.email}
-                                        onChange={handleInputChange}
-                                        required
-                                    />
-                                </div>
-                                <div className="form-group mb-2">
-                                    <label htmlFor="contactNo">Contact No</label>
-                                    <input
-                                        type="text"
-                                        id="contactNo"
-                                        name="contactNo"
-                                        className="form-control"
-                                        value={formData.contactNo}
-                                        onChange={handleInputChange}
-                                        required
-                                    />
-                                </div>
-                                <div className="form-group mb-2">
-                                    <label htmlFor="username">Username</label>
-                                    <input
-                                        type="text"
-                                        id="username"
-                                        name="username"
-                                        className="form-control"
-                                        value={formData.username}
-                                        onChange={handleInputChange}
-                                        required
-                                    />
-                                </div>
-                                <div className="form-group mb-2">
-                                    <label htmlFor="password">Password</label>
-                                    <input
-                                        type="password"
-                                        id="password"
-                                        name="password"
-                                        className="form-control"
-                                        value={formData.password}
-                                        onChange={handleInputChange}
-                                        required
-                                    />
-                                </div>
-                                <div className="text-center">
-                                    <button type="submit" className="btn btn-primary btn-lg">Register</button>
-                                </div>
-                            </form>
-                        </div>
+                                <form onSubmit={handleSubmit}>
+                                    <div className="form-group mb-2">
+                                        <label htmlFor="firstName">First Name</label>
+                                        <input
+                                            type="text"
+                                            id="firstName"
+                                            name="firstName"
+                                            className="form-control"
+                                            value={formData.firstName}
+                                            onChange={handleInputChange}
+                                            required
+                                        />
+                                    </div>
+                                    <div className="form-group mb-2">
+                                        <label htmlFor="lastName">Last Name</label>
+                                        <input
+                                            type="text"
+                                            id="lastName"
+                                            name="lastName"
+                                            className="form-control"
+                                            value={formData.lastName}
+                                            onChange={handleInputChange}
+                                            required
+                                        />
+                                    </div>
+                                    <div className="form-group mb-2">
+                                        <label htmlFor="email">Your Email</label>
+                                        <input
+                                            type="email"
+                                            id="email"
+                                            name="email"
+                                            className="form-control"
+                                            value={formData.email}
+                                            onChange={handleInputChange}
+                                            required
+                                        />
+                                    </div>
+                                    <div className="form-group mb-2">
+                                        <label htmlFor="contactNo">Contact No</label>
+                                        <input
+                                            type="text"
+                                            id="contactNo"
+                                            name="contactNo"
+                                            className="form-control"
+                                            value={formData.contactNo}
+                                            onChange={handleInputChange}
+                                            required
+                                        />
+                                    </div>
+                                    <div className="form-group mb-2">
+                                        <label htmlFor="username">Username</label>
+                                        <input
+                                            type="text"
+                                            id="username"
+                                            name="username"
+                                            className="form-control"
+                                            value={formData.username}
+                                            onChange={handleInputChange}
+                                            required
+                                        />
+                                    </div>
+                                    <div className="form-group mb-2">
+                                        <label htmlFor="password">Password</label>
+                                        <input
+                                            type="password"
+                                            id="password"
+                                            name="password"
+                                            className="form-control"
+                                            value={formData.password}
+                                            onChange={handleInputChange}
+                                            required
+                                        />
+                                    </div>
+                                    <div className="text-center">
+                                        <button type="submit" className="btn btn-primary btn-lg">Register</button>
+                                    </div>
+                                </form>
+                            </div>
                         <div className="text-center mt-4"> {/* Added top margin */}
                             <p className="text-muted">
                                 With a library card, you can borrow books, audiobooks, and ebooks. You can also access a variety of online resources, including research databases and streaming services.

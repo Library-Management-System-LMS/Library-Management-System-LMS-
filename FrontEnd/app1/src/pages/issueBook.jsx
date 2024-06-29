@@ -1,6 +1,9 @@
 import React from 'react';
 
 const IssueBook = () => {
+
+  document.title = "ISSUE BOOK";
+
   return (
     <div className="container issue-book-container mt-5">
       <div className="row">
